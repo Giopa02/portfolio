@@ -295,12 +295,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalLink = document.getElementById("modal-link")
 
   const projectData = {
-    billeterie: {
-      title: "Système de Billetterie",
+    smartbillet: {
+      title: "Système de Billetterie - SmartBillet",
       description:
         "Application de gestion de billetterie développée en JavaFX avec MySQL, permettant la gestion complète des clients, événements et billets avec une interface d'administration professionnelle.",
       details:
         "<strong>Fonctionnalités clés :</strong><br>• Gestion des clients<br>• Gestion des billets<br>• Gestion des évènements<br>• Interface utilisateur",
+    },
+    bookhub: {
+      title: "Bookhub",
+      description:
+        "L’application permet à trois types d’utilisateurs d’interagir avec le système : les visiteurs (consultation du catalogue), les usagers (emprunts de livres) et les bibliothécaires (administration complète via un back-office).",
+      details:
+        "<strong>Fonctionnalités clés :</strong><br>• Inscription et connexion sécurisées avec hashage bcrypt<br>• Catalogue de livres avec recherche par titre, auteur ou catégorie<br>• Système d’emprunt : 1 à 5 exemplaires pour 30 jours maximum<br>• Gestion des retours par le bibliothécaire<br>• Back-office : CRUD exemplaires, gestion usagers, recherche avancée<br>• Profil utilisateur avec emprunt en cours et historique",
     },
     pacman: {
       title: "Pacman",
