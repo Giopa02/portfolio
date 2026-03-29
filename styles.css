@@ -2054,6 +2054,210 @@ footer p {
   color: var(--cream);
 }
 
+/* Blocs structurés de la veille */
+.veille-block {
+  margin-bottom: 50px;
+}
+
+.veille-block-title {
+  font-family: var(--tenor-sans);
+  font-size: 1.8rem;
+  color: var(--cream);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.veille-block-icon {
+  font-size: 1.8rem;
+}
+
+/* Bloc "Pourquoi ce sujet" */
+.veille-why {
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid var(--purple);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 25px;
+}
+
+.veille-why p {
+  font-family: var(--tenor-sans);
+  font-size: 1.5rem;
+  color: rgba(245, 235, 224, 0.85);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Grille des domaines */
+.veille-domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.veille-domain-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(155, 54, 191, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.veille-domain-card:hover {
+  background: var(--purple-light);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(155, 54, 191, 0.2);
+}
+
+.domain-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.veille-domain-card h5 {
+  font-family: var(--tenor-sans);
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.veille-domain-card p {
+  font-family: var(--tenor-sans);
+  font-size: 1.3rem;
+  color: rgba(245, 235, 224, 0.7);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.domain-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.app-pill {
+  background: rgba(155, 54, 191, 0.2);
+  color: rgba(245, 235, 224, 0.85);
+  font-family: var(--tenor-sans);
+  font-size: 1.1rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(155, 54, 191, 0.35);
+}
+
+/* Sources enrichies */
+.source-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.source-name {
+  font-family: var(--tenor-sans);
+  font-size: 1.4rem;
+  color: var(--cream);
+  font-weight: 500;
+}
+
+.source-desc {
+  font-family: var(--tenor-sans);
+  font-size: 1.2rem;
+  color: rgba(245, 235, 224, 0.55);
+}
+
+/* Apprentissages numérotés */
+.veille-learnings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.learning-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(155, 54, 191, 0.18);
+  border-radius: 10px;
+  padding: 16px 20px;
+  transition: all 0.3s ease;
+}
+
+.learning-item:hover {
+  background: var(--purple-light);
+  transform: translateX(4px);
+}
+
+.learning-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(155, 54, 191, 0.25);
+  border: 1px solid rgba(155, 54, 191, 0.5);
+  color: rgba(245, 235, 224, 0.9);
+  font-family: var(--tenor-sans);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.learning-item p {
+  font-family: var(--tenor-sans);
+  font-size: 1.4rem;
+  color: rgba(245, 235, 224, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bloc "Enjeu clé" */
+.veille-takeaway {
+  background: rgba(155, 54, 191, 0.08);
+  border: 1px solid rgba(155, 54, 191, 0.3);
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.takeaway-label {
+  background: var(--purple);
+  color: var(--cream);
+  font-family: var(--tenor-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.veille-takeaway p {
+  font-family: var(--tenor-sans);
+  font-size: 1.4rem;
+  color: rgba(245, 235, 224, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .veille-domains-grid {
+    grid-template-columns: 1fr;
+  }
+  .veille-takeaway {
+    flex-direction: column;
+  }
+}
+
 /* =============================================
    SECTION FICHE SYNTHÈSE
    ============================================= */
