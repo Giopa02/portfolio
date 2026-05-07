@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projet — Giordana Nyom</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./project-detail.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Monsieur+La+Doulaise&family=Tenor+Sans&display=swap" />
+        <link rel="icon" href="assets/icons/website-logo.png" />
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1 class="logo-title">giordananyom</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li class="underline-hover"><a href="index.html#home">Accueil</a></li>
+                    <li class="underline-hover"><a href="index.html#about">À propos</a></li>
+                    <li class="underline-hover"><a href="index.html#works">Projets</a></li>
+                    <li class="underline-hover"><a href="index.html#veille">Veille</a></li>
+                    <li class="underline-hover"><a href="index.html#synthese">Fiche Synthèse</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="project-detail-main">
+
+            <section class="project-detail-hero">
+                <a href="index.html#works" class="back-link">← Retour aux projets</a>
+                <div class="project-detail-header">
+                    <div class="project-detail-badges">
+                        <span id="detail-status" class="project-status"></span>
+                        <span id="detail-e6-badge" class="badge-e6" style="display:none;">Épreuve E6</span>
+                    </div>
+                    <h1 id="detail-title" class="project-detail-title heading"></h1>
+                    <p id="detail-tagline" class="project-detail-tagline"></p>
+                </div>
+            </section>
+
+            <section class="project-detail-section">
+                <h2 class="project-detail-section-title">Description du projet</h2>
+                <div id="detail-description" class="project-detail-description"></div>
+            </section>
+
+            <section class="project-detail-section">
+                <h2 class="project-detail-section-title">Fonctionnalités</h2>
+                <div id="detail-features" class="project-detail-features"></div>
+            </section>
+
+            <section class="project-detail-section" id="detail-pdf-section" style="display:none;">
+                <h2 class="project-detail-section-title">Documentation</h2>
+                <iframe id="detail-pdf" class="project-detail-pdf" src="" title="Documentation PDF"></iframe>
+            </section>
+
+            <section class="project-detail-section" id="detail-video-section">
+                <h2 class="project-detail-section-title">Démonstration</h2>
+                <div class="project-detail-video-wrapper">
+                    <video id="detail-video" class="project-detail-video" controls>
+                        <source id="detail-video-src" src="" type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                    <p id="detail-video-placeholder" class="video-placeholder">Vidéo de démonstration à venir.</p>
+                </div>
+            </section>
+
+            <section class="project-detail-section" id="detail-bilan-section" style="display:none;">
+                <h2 class="project-detail-section-title">Bilan</h2>
+                <div id="detail-bilan" class="project-detail-bilan"></div>
+            </section>
+
+            <section class="project-detail-section">
+                <h2 class="project-detail-section-title">Technologies utilisées</h2>
+                <div id="detail-technologies" class="project-detail-technologies"></div>
+            </section>
+
+            <section class="project-detail-section project-detail-links-section">
+                <a id="detail-github-link" href="#" class="modal-link-btn" target="_blank" style="display:none;">Voir le code</a>
+                <a id="detail-live-link" href="#" class="modal-detail-btn" target="_blank" style="display:none;">Voir le site</a>
+            </section>
+
+        </main>
+
+        <script src="./project-detail.js"></script>
+    </body>
+</html>

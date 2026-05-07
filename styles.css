@@ -625,6 +625,14 @@ body {
   flex-direction: column;
 }
 
+.badges-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
 /* Added project status badge styling */
 .project-status {
   display: inline-block;
@@ -633,7 +641,7 @@ body {
   font-weight: 600;
   padding: 6px 14px;
   border-radius: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   width: fit-content;
@@ -656,10 +664,31 @@ body {
   transform: translateX(4px);
 }
 
+.badge-e6 {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-family: var(--tenor-sans);
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+  border: 1.5px solid #8b5cf6;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover .badge-e6 {
+  transform: translateX(4px);
+}
+
 .project-title {
   font-size: 2.2rem;
   font-family: var(--tenor-sans);
   margin-bottom: 16px;
+  margin-top: 16px;
   width: 100%;
   line-height: 1.4;
   font-weight: 600;
@@ -799,6 +828,34 @@ body {
 .modal-link-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(155, 54, 191, 0.4);
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.modal-detail-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--cream);
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--tenor-sans);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 1.5px solid var(--cream);
+  transition: all 0.3s ease;
+}
+
+.modal-detail-btn:hover {
+  background-color: var(--cream);
+  color: var(--black);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(245, 235, 224, 0.15);
 }
 
 /* Enhanced contact section */

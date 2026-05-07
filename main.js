@@ -293,14 +293,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalDescription = document.getElementById("modal-description")
   const modalDetails = document.getElementById("modal-details")
   const modalLink = document.getElementById("modal-link")
+  const modalDetailLink = document.getElementById("modal-detail-link")
 
   const projectData = {
     smartbillet: {
       title: "Système de Billetterie - SmartBillet",
       description:
-        "Application de gestion de billetterie développée en JavaFX avec MySQL, permettant la gestion complète des clients, événements et billets avec une interface d'administration professionnelle.",
+        "Application de gestion de billetterie développée en JavaFX avec MySQL, permettant la gestion complète des clients, événements et billets avec une interface d’administration professionnelle.",
       details:
         "<strong>Fonctionnalités clés :</strong><br>• Gestion des clients<br>• Gestion des billets<br>• Gestion des évènements<br>• Interface utilisateur",
+      page: "project.html?project=smartbillet",
     },
     bookhub: {
       title: "Bookhub",
@@ -308,6 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "L’application permet à trois types d’utilisateurs d’interagir avec le système : les visiteurs (consultation du catalogue), les usagers (emprunts de livres) et les bibliothécaires (administration complète via un back-office).",
       details:
         "<strong>Fonctionnalités clés :</strong><br>• Inscription et connexion sécurisées avec hashage bcrypt<br>• Catalogue de livres avec recherche par titre, auteur ou catégorie<br>• Système d’emprunt : 1 à 5 exemplaires pour 30 jours maximum<br>• Gestion des retours par le bibliothécaire<br>• Back-office : CRUD exemplaires, gestion usagers, recherche avancée<br>• Profil utilisateur avec emprunt en cours et historique",
+      page: "project.html?project=bookhub",
     },
     pacman: {
       title: "Pacman",
@@ -315,24 +318,28 @@ document.addEventListener("DOMContentLoaded", () => {
         "Le joueur incarne Pac-Man, un personnage jaune évoluant dans un labyrinthe rempli de pac-gommes. Le but est simple : manger toutes les pac-gommes sans se faire attraper par les fantômes.",
       details:
         "<strong>Fonctionnalités clés :</strong><br>• Création du plateau<br>• Déplacement de Pacman<br>• Gestion des fantômes<br>• Gestion du score",
+      page: "project.html?project=pacman",
     },
     flappybird: {
       title: "Copie Flappy Bird",
       description:
         "Une copie du jeu Flappy Bird",
       details: "En cours",
+      page: "project.html?project=flappybird",
     },
     tetris: {
       title: "Copie Tetris",
       description:
         "Une copie du jeu Tetris",
-      details: "En cours"
+      details: "En cours",
+      page: "project.html?project=tetris",
     },
     ecommerce:{
       title: "Site E-Commerce",
       description:
         "Ce projet représente ma deuxième réalisation dans le cadre de ma formation en développement web, axé sur l’apprentissage du PHP. Il s’agit d’une plateforme e-commerce spécialisée dans la vente d’objet en ligne.",
-      details: "<strong>Fonctionnalités clés :</strong><br>• Catalogue de produits<br>• Gestion des utilisateurs<br>• Fonctionnalités E-Commerce<br>• Interface utilisateur"
+      details: "<strong>Fonctionnalités clés :</strong><br>• Catalogue de produits<br>• Gestion des utilisateurs<br>• Fonctionnalités E-Commerce<br>• Interface utilisateur",
+      page: "project.html?project=ecommerce",
     }
   }
 
@@ -354,9 +361,13 @@ document.addEventListener("DOMContentLoaded", () => {
         modalLink.removeAttribute("href")
         modalLink.style.cursor = "default"
       } else {
-        modalLink.textContent = "Voir le projet"
+        modalLink.textContent = "Voir le code"
         modalLink.href = linkUrl
         modalLink.style.cursor = "pointer"
+      }
+
+      if (modalDetailLink) {
+        modalDetailLink.href = project.page
       }
 
       modal.classList.add("active")
