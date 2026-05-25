@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Contenu "Qui suis-je ?"
   const aboutMeContent = `
-    Je m'appelle Giordana Nyom, j'ai actuellement 23 ans. Je suis étudiante à Paris au sein de l'école H3 Hitema en deuxième
+    Je m'appelle Giordana Nyom, j'ai actuellement 24 ans. Je suis étudiante à Paris au sein de l'école H3 Hitema en deuxième
     année de BTS SIO spécialité SLAM (Services Informatiques aux Organisations spécialité en Solutions Logicielles et Applications Métiers).
     <br><br>
     <strong>Pourquoi le développement web ?</strong><br>
